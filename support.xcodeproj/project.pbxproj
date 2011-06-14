@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE1EC83E13A5D69400103A56 /* AutoUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1EC83D13A5D69400103A56 /* AutoUpdater.m */; };
+		DE6B75E313A6AD200089BE75 /* uninstall.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = DE6B75E213A6AD190089BE75 /* uninstall.sh */; };
+		DE6C0A7813A5EE9E008C5DC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6C0A7413A5EE50008C5DC4 /* Foundation.framework */; };
+		DEF5A54B13A7A15F0057D41A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF5A54713A7A13F0057D41A /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE6B75D313A6AA460089BE75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE64BDB813A5CC340034530D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE64BDC013A5CC340034530D;
+			remoteInfo = autoupdater;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE6B75E013A6ACFD0089BE75 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Executables;
+			dstSubfolderSpec = 1;
+			files = (
+				DE6B75E313A6AD200089BE75 /* uninstall.sh in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DE1EC83D13A5D69400103A56 /* AutoUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoUpdater.m; sourceTree = "<group>"; };
+		DE64BDD913A5CCDE0034530D /* autoupdater */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = autoupdater; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6B75E213A6AD190089BE75 /* uninstall.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = uninstall.sh; sourceTree = "<group>"; };
+		DE6C0A7413A5EE50008C5DC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DE8A061213A7E30F00D7D436 /* launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = launchd.plist; sourceTree = "<group>"; };
+		DEE8849713A6880500298FAE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		DEE884A413A6885F00298FAE /* fuse4x.fs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "fuse4x.fs-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DEE884A513A6885F00298FAE /* fuse4x.fs-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "fuse4x.fs-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		DEE884A713A6886A00298FAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		DEE884BC13A68A5A00298FAE /* fuse4x.fs.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fuse4x.fs.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF5A54613A79B190057D41A /* build.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = build.rb; sourceTree = "<group>"; };
+		DEF5A54713A7A13F0057D41A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE64BDBE13A5CC340034530D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6C0A7813A5EE9E008C5DC4 /* Foundation.framework in Frameworks */,
+				DEF5A54B13A7A15F0057D41A /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE64BDB613A5CC340034530D = {
+			isa = PBXGroup;
+			children = (
+				DE1EC83D13A5D69400103A56 /* AutoUpdater.m */,
+				DE8A061213A7E30F00D7D436 /* launchd.plist */,
+				DE6B75E213A6AD190089BE75 /* uninstall.sh */,
+				DEF5A54613A79B190057D41A /* build.rb */,
+				DEE8849A13A6880500298FAE /* Supporting Files */,
+				DEBBA0E513A5DC6900E7D3A4 /* Frameworks */,
+				DE64BDC213A5CC350034530D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE64BDC213A5CC350034530D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE64BDD913A5CCDE0034530D /* autoupdater */,
+				DEE884BC13A68A5A00298FAE /* fuse4x.fs.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEBBA0E513A5DC6900E7D3A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEF5A54713A7A13F0057D41A /* AppKit.framework */,
+				DE6C0A7413A5EE50008C5DC4 /* Foundation.framework */,
+				DEE8849713A6880500298FAE /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEE8849A13A6880500298FAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEE884A613A6886A00298FAE /* InfoPlist.strings */,
+				DEE884A413A6885F00298FAE /* fuse4x.fs-Info.plist */,
+				DEE884A513A6885F00298FAE /* fuse4x.fs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = fuse4x.fs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE64BDC013A5CC340034530D /* autoupdater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE64BDCA13A5CC350034530D /* Build configuration list for PBXNativeTarget "autoupdater" */;
+			buildPhases = (
+				DE64BDBD13A5CC340034530D /* Sources */,
+				DE64BDBE13A5CC340034530D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = autoupdater;
+			productName = support;
+			productReference = DE64BDD913A5CCDE0034530D /* autoupdater */;
+			productType = "com.apple.product-type.tool";
+		};
+		DEE8849513A6880500298FAE /* fuse4x.fs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE884A213A6880500298FAE /* Build configuration list for PBXNativeTarget "fuse4x.fs" */;
+			buildPhases = (
+				DE6B75E013A6ACFD0089BE75 /* CopyFiles */,
+				DE6B75D713A6AAEF0089BE75 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE6B75D413A6AA460089BE75 /* PBXTargetDependency */,
+			);
+			name = fuse4x.fs;
+			productName = fuse4x.fs;
+			productReference = DEE884BC13A68A5A00298FAE /* fuse4x.fs.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE64BDB813A5CC340034530D /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DE64BDBB13A5CC340034530D /* Build configuration list for PBXProject "support" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ca,
+				cs,
+				cy,
+				da,
+				de,
+				el,
+				es,
+				fi,
+				fr,
+				he,
+				hu,
+				id,
+				is,
+				it,
+				ja,
+				ko,
+				nl,
+				no,
+				pl,
+				pt_BR,
+				pt_PT,
+				ru,
+				sk,
+				sv,
+				English,
+				th,
+				tr,
+				zh_CN,
+				zh_TW,
+			);
+			mainGroup = DE64BDB613A5CC340034530D;
+			productRefGroup = DE64BDC213A5CC350034530D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE64BDC013A5CC340034530D /* autoupdater */,
+				DEE8849513A6880500298FAE /* fuse4x.fs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DE6B75D713A6AAEF0089BE75 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p build/$CONFIGURATION/$EXECUTABLES_FOLDER_PATH/\ncp build/$CONFIGURATION/autoupdater build/$CONFIGURATION/$EXECUTABLES_FOLDER_PATH/";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE64BDBD13A5CC340034530D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1EC83E13A5D69400103A56 /* AutoUpdater.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE6B75D413A6AA460089BE75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE64BDC013A5CC340034530D /* autoupdater */;
+			targetProxy = DE6B75D313A6AA460089BE75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEE884A613A6886A00298FAE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEE884A713A6886A00298FAE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE64BDC813A5CC350034530D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DE64BDC913A5CC350034530D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DE64BDCB13A5CC350034530D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DE64BDCC13A5CC350034530D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DEE884A013A6880500298FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fuse4x.fs-Prefix.pch";
+				INFOPLIST_FILE = "fuse4x.fs-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		DEE884A113A6880500298FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fuse4x.fs-Prefix.pch";
+				INFOPLIST_FILE = "fuse4x.fs-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE64BDBB13A5CC340034530D /* Build configuration list for PBXProject "support" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE64BDC813A5CC350034530D /* Debug */,
+				DE64BDC913A5CC350034530D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE64BDCA13A5CC350034530D /* Build configuration list for PBXNativeTarget "autoupdater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE64BDCB13A5CC350034530D /* Debug */,
+				DE64BDCC13A5CC350034530D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEE884A213A6880500298FAE /* Build configuration list for PBXNativeTarget "fuse4x.fs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE884A013A6880500298FAE /* Debug */,
+				DEE884A113A6880500298FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE64BDB813A5CC340034530D /* Project object */;
+}
