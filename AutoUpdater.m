@@ -110,7 +110,7 @@ int main(void)
         CFOptionFlags response;
         CFMutableDictionaryRef dictionary = CFDictionaryCreateMutable(NULL, 0, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
         CFDictionarySetValue(dictionary, kCFUserNotificationAlertHeaderKey, @"A new version of Fuse4X available");
-        CFDictionarySetValue(dictionary, kCFUserNotificationAlertMessageKey, @"Generally it is a good idea to update Fuse4x. The new version adds more features, fixes bugs and provides the best possible user experience.");
+        CFDictionarySetValue(dictionary, kCFUserNotificationAlertMessageKey, @"Generally it is a good idea to update Fuse4X. The new version adds more features, fixes bugs and provides the best possible user experience.");
         CFDictionarySetValue(dictionary, kCFUserNotificationAlternateButtonTitleKey, @"Skip this version");
         CFDictionarySetValue(dictionary, kCFUserNotificationOtherButtonTitleKey, @"Notify me later");
         CFDictionarySetValue(dictionary, kCFUserNotificationDefaultButtonTitleKey, @"Download It");
