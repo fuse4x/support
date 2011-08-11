@@ -3,12 +3,12 @@
 # The kext might not be loaded yet, so silently ignore the output
 kextunload -b org.fuse4x.kext.fuse4x 2> /dev/null
 
-rm -r /Library/Frameworks/Fuse4X.framework/
-rm -r /System/Library/Filesystems/fuse4x.fs/
-rm /System/Library/LaunchAgents/org.fuse4x.autoupdater.plist
-rm ~/Library/Preferences/org.fuse4x.autoupdater.plist
-rm ~root/Library/Preferences/org.fuse4x.autoupdater.plist
-rm -r /System/Library/Extensions/fuse4x.kext/
-rm -r /usr/local/include/fuse*
-rm /usr/local/lib/libfuse4x.*
-rm /usr/local/lib/pkgconfig/fuse.pc
+rm -rf /Library/Frameworks/Fuse4X.framework/
+rm -rf /System/Library/Filesystems/fuse4x.fs/
+rm -f /System/Library/LaunchAgents/org.fuse4x.autoupdater.plist
+rm -f ~/Library/Preferences/org.fuse4x.autoupdater.plist
+rm -f ~root/Library/Preferences/org.fuse4x.autoupdater.plist
+rm -rf /System/Library/Extensions/fuse4x.kext/
+rm -rf /usr/local/include/fuse*
+rm -f /usr/local/lib/libfuse4x.*
+rm -f /usr/local/lib/pkgconfig/fuse.pc
