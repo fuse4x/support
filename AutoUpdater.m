@@ -113,7 +113,7 @@ int main(void)
         CFDictionarySetValue(dictionary, kCFUserNotificationAlertMessageKey, @"Generally it is a good idea to update Fuse4X. The new version adds more features, fixes bugs and provides the best possible user experience.");
         CFDictionarySetValue(dictionary, kCFUserNotificationAlternateButtonTitleKey, @"Skip this version");
         CFDictionarySetValue(dictionary, kCFUserNotificationOtherButtonTitleKey, @"Notify me later");
-        CFDictionarySetValue(dictionary, kCFUserNotificationDefaultButtonTitleKey, @"Download It");
+        CFDictionarySetValue(dictionary, kCFUserNotificationDefaultButtonTitleKey, @"Download it");
 
         CFUserNotificationRef notification = CFUserNotificationCreate(NULL, 0, kCFUserNotificationNoteAlertLevel, NULL, dictionary);
 
