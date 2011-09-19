@@ -10,6 +10,7 @@
 		DE1EC83E13A5D69400103A56 /* AutoUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1EC83D13A5D69400103A56 /* AutoUpdater.m */; };
 		DE6B75E313A6AD200089BE75 /* uninstall.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = DE6B75E213A6AD190089BE75 /* uninstall.sh */; };
 		DE6C0A7813A5EE9E008C5DC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6C0A7413A5EE50008C5DC4 /* Foundation.framework */; };
+		DED2BC0D1427C6F80053EB01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEE884A613A6886A00298FAE /* InfoPlist.strings */; };
 		DEF5A54B13A7A15F0057D41A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF5A54713A7A13F0057D41A /* AppKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +133,7 @@
 			buildPhases = (
 				DE6B75E013A6ACFD0089BE75 /* CopyFiles */,
 				DE6B75D713A6AAEF0089BE75 /* ShellScript */,
+				DED2BBD71427C6990053EB01 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +150,9 @@
 /* Begin PBXProject section */
 		DE64BDB813A5CC340034530D /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = DE64BDBB13A5CC340034530D /* Build configuration list for PBXProject "support" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -194,6 +199,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DED2BBD71427C6990053EB01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED2BC0D1427C6F80053EB01 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		DE6B75D713A6AAEF0089BE75 /* ShellScript */ = {
