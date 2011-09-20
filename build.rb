@@ -27,3 +27,8 @@ system("sudo cp -R build/#{configuration}/fuse4x.fs.bundle/ #{install_path}")
 launchd_dir = root_dir ? File.join(root_dir, '/System/Library/LaunchAgents') : '/System/Library/LaunchAgents'
 system("sudo mkdir -p #{launchd_dir}")
 system("sudo cp launchd.plist #{launchd_dir}/org.fuse4x.autoupdater.plist")
+# Most of the files are created with XCode, autotools and have correct file mode.
+# From other side some files are copied right from source tree. And the files have permissions
+# depending on the user umask ('git checkout' does not change permissions).
+# Set file mode manually to make it deterministic.
+system("sudo chmod 644 #{launchd_dir}/org.fuse4x.autoupdater.plist")
