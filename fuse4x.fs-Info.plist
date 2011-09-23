@@ -41,7 +41,7 @@
 	<key>CFPlugInUnloadFunction</key>
 	<string></string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2011 fuse4x.org. All rights reserved.</string>
+	<string>Copyright © 2011 Anatol Pomozov. All rights reserved.</string>
 	<key>FSPersonalities</key>
 	<dict>
 		<key>Fuse4X</key>

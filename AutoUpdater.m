@@ -1,10 +1,4 @@
-//
-//  AutoUpdater.m
-//  support
-//
-//  Created by Anatol Pomozov on 6/12/11.
-//  Copyright 2011 fuse4x.org. All rights reserved.
-//
+//  Copyright 2011 Anatol Pomozov. All rights reserved.
 
 #include <stdio.h>
 
