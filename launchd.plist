@@ -6,7 +6,7 @@
 	<string>org.fuse4x.autoupdater</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/System/Library/Filesystems/fuse4x.fs/Contents/Executables/autoupdater</string>
+		<string>/Library/Filesystems/fuse4x.fs/Contents/Executables/autoupdater</string>
 	</array>
 	<key>StartInterval</key>
 	<integer>864000</integer>

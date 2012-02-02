@@ -5,7 +5,7 @@
 #                 redeploys kext to local machine and restarts it
 
 CWD = File.dirname(__FILE__)
-BUNDLE_DIR = '/System/Library/Filesystems/fuse4x.fs'
+BUNDLE_DIR = '/Library/Filesystems/fuse4x.fs'
 Dir.chdir(CWD)
 
 release = ARGV.include?('--release')
@@ -29,7 +29,7 @@ install_path = root_dir ? File.join(root_dir, BUNDLE_DIR) : BUNDLE_DIR
 system("sudo mkdir -p #{install_path}")
 system("sudo cp -R build/#{configuration}/fuse4x.fs.bundle/ #{install_path}")
 
-launchd_dir = root_dir ? File.join(root_dir, '/System/Library/LaunchAgents') : '/System/Library/LaunchAgents'
+launchd_dir = root_dir ? File.join(root_dir, '/Library/LaunchAgents') : '/Library/LaunchAgents'
 system("sudo mkdir -p #{launchd_dir}")
 system("sudo cp launchd.plist #{launchd_dir}/org.fuse4x.autoupdater.plist")
 # Most of the files are created with XCode, autotools and have correct file mode.
