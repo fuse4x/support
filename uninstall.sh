@@ -13,6 +13,7 @@ rm -f ~root/Library/Preferences/org.fuse4x.autoupdater.plist;
 rm -rf /Library/Extensions/fuse4x.kext/;
 rm -rf /usr/local/include/fuse*;
 rm -f /usr/local/lib/libfuse4x.*;
+rm -rf /usr/local/lib/libfuse*;
 rm -f /usr/local/lib/pkgconfig/fuse.pc;
 
 pkgutil --forget org.fuse4x.Fuse4X;
