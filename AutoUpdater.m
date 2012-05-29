@@ -13,7 +13,7 @@
 #include <fuse/fuse_version.h>
 
 const CFStringRef APPLICATION_NAME = CFSTR("org.fuse4x.autoupdater");
-NSString* FEED_URL = @"http://fuse4x.org/updates/fuse4x.stable";
+NSString* FEED_URL = @"http://fuse4x.github.com/updates/fuse4x.stable";
 NSString* DOWNLOAD_URL = @"https://github.com/downloads/fuse4x/fuse4x/Fuse4X-%@.dmg";
 
 NSString *parseVersion(NSString *content) {
